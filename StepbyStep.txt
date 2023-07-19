@@ -1,0 +1,32 @@
+1) Log in to Github website 
+2) Website - Create Repository "TestNew"
+3) Local - Create folder E:\GitHubRepoFinal
+4) Right click in folder & open GitBashHere
+5) Execute following code 
+   - git init
+   - git config --global user.name
+   - git config --global user.email
+   - git add -A
+   - git commit -m "First Commit"
+   - git branch -M main
+   - git remote add origin git@github.com:SaThorat/TestNew.git
+   - git push -u origin main
+	git@github.com: Permission denied (publickey).
+	fatal: Could not read from remote repository.
+   - $ ssh-keygen -t ed25519 -C "sathorat2003@gmail.com"
+	Generating public/private ed25519 key pair.
+	Enter file in which to save the key (/c/Users/Sandeep/.ssh/id_ed25519):
+	Enter passphrase (empty for no passphrase):
+	Enter same passphrase again:
+	Your identification has been saved in /c/Users/Sandeep/.ssh/id_ed25519
+	Your public key has been saved in /c/Users/Sandeep/.ssh/id_ed25519.pub
+	The key fingerprint is:
+	SHA256:pQ7WMp9Zk0oaRBa76f7k8cx8dpGEGXXWSXL+BDwEAeQ sathorat2003@gmail.com
+   - eval "$(ssh-agent -s)"
+   - ssh-add ~/.ssh/id_ed25519
+   - clip < ~/.ssh/id_ed25519.pub
+
+   - git push -u origin main
+   - git add -A
+   - git commit -m "First Draft Text Mining Blog"
+   - git push
